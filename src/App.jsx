@@ -1,4 +1,5 @@
 import { useState } from "react";
+import icon from "./assets/icons8-form-48.png";
 
 function App() {
   const initialFormState = {
@@ -38,7 +39,11 @@ function App() {
 
   return (
     <div className="relative py-10 px-4 sm:px-6 md:px-20 lg:px-32 min-h-screen">
-      <h2 className="font-bold text-center text-xl mb-4">Dynamic Form</h2>
+      <div className="flex items-center gap-4 mb-8 mx-auto max-w-2xl ">
+        <img src={icon} alt="" />
+        <h2 className="font-bold text-xl">Dynamic Form</h2>
+      </div>
+
       <form
         onSubmit={submit}
         className="bg-base-200 border-base-300 space-y-3 max-w-2xl mx-auto rounded-box border p-4"
@@ -172,7 +177,7 @@ function App() {
 
       {/* Modal */}
       {showModal && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+        <div className="fixed p-4 inset-0 bg-black/50 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded shadow-md w-full max-w-lg relative">
             <button
               className="absolute top-2 right-3 text-xl font-bold text-gray-600 hover:text-black cursor-pointer"
@@ -180,7 +185,9 @@ function App() {
             >
               ×
             </button>
-            <h3 className="text-lg font-semibold mb-4">Submitted Information</h3>
+            <h3 className="text-lg font-semibold mb-4">
+              Submitted Information
+            </h3>
             <div className="space-y-2 text-sm">
               {Object.entries(submittedData).map(([key, value]) => (
                 <div key={key}>
