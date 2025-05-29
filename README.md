@@ -101,9 +101,3 @@ lastName: Doe
 country: Australia
 ...
 ```
-
-## 🧩 Troubleshooting
-
-* **Form doesn't submit**: Ensure all required fields are filled.
-* **Modal doesn't show**: Check `setShowModal(true)` is triggered and Tailwind classes are applied.
-* **Tailwind/DaisyUI styles not applying**: Make sure `tailwind.config.js` is properly set up.
