@@ -1,5 +1,5 @@
 # Dynamic Form
-
+Note: This project is a job task assigned from a company.
 A responsive and dynamic React-based form with conditional rendering for state/territory fields, integrated modal for data preview, and styled using Tailwind CSS and DaisyUI.
 
 [Live link](https://dynamic-form-coral-eta.vercel.app/)
